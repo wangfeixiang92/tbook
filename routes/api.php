@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return 124;
+    return 124345235;
     return $request->user();
 });
 
