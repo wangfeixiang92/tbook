@@ -31,7 +31,7 @@ EOF;
 }
 
 
-if(!function_exists('echoJs')){
+if(!function_exists('dieJs')){
     /**
      * 向客户端发送一段Js之后终止
      *
@@ -44,7 +44,7 @@ if(!function_exists('echoJs')){
     }
 }
 
-if(!function_exists('echoJs')){
+if(!function_exists('errorAlert')){
     /**
      * 在客户端alert一条消息之后并且终止
      *
