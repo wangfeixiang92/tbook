@@ -42,6 +42,6 @@ class LoginController extends Controller
      * */
     public  function  login(){
 
-        echo '登录';
+        echo '账号测试';
     }
 }
