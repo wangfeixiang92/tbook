@@ -12,35 +12,17 @@
 	<div class="topbar">
 		<div class="container">
 			<div class="topbar-nav">
-					<a href="#">大米商城</a>
+					<a href="#">首页</a>
 					<span class="ver">|</span>
-					<a href="#">DAMI</a>
-					<span class="ver">|</span>
-					<a href="#">米聊</a>
-					<span class="ver">|</span>
-					<a href="#">游戏</a>
-					<span class="ver">|</span>
-					<a href="#">多看阅读</a>
-					<span class="ver">|</span>
-					<a href="#">云服务</a>
-					<span class="ver">|</span>
-					<a href="#">金融</a>
-					<span class="ver">|</span>
-					<a href="#">大米商城移动版</a>
-					<span class="ver">|</span>
-					<a href="#">问题反馈</a>
-					<span class="ver">|</span>
-					<a href="#">Select Refion</a>
-			</div>
-			<div class="topbar-cart">
-				<a href="#"><i></i>购物车</a>
+					<a href="#">关注我们</a>
+
 			</div>
 			<div class="topbar-info">
 				<a href="#" class="link">登录</a>
 					<span class="ver">|</span>
 				<a href="#" class="link">注册</a>
 					<span class="ver">|</span>
-				<a href="#" class="link">消息通知</a>
+				<a href="#" class="link">资讯中心</a>
 			</div>
 		</div>
 	</div>
@@ -338,15 +320,12 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item"><a href="#">大米手机</a></li>
-					<li class="item"><a href="#">红米</a></li>
-					<li class="item"><a href="#">平板·笔记本</a></li>
-					<li class="item"><a href="#">电视</a></li>
-					<li class="item"><a href="#">盒子·影音</a></li>
-					<li class="item"><a href="#">路由器</a></li>
-					<li class="item"><a href="#">智能硬件</a></li>
-					<li class="item"><a href="#">服务</a></li>
-					<li class="item"><a href="#">社区</a></li>
+					<li class="item"><a href="#">首页</a></li>
+					<li class="item"><a href="#">资源</a></li>
+					<li class="item"><a href="#">在线手册</a></li>
+					<li class="item"><a href="#">BUG社区</a></li>
+					<li class="item"><a href="#">工具下载</a></li>
+					<li class="item"><a href="#">资讯中心</a></li>
 				</ul>
 			</div>
 			<div class="header-search">
