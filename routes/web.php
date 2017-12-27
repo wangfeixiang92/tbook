@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'Home'],function ($router)
+{
+    // 用户
+    require(__DIR__ . '/home/user.php');
+
+});
