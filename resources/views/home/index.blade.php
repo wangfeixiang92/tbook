@@ -325,7 +325,9 @@
 					<li class="item"><a href="#">在线手册</a></li>
 					<li class="item"><a href="#">BUG社区</a></li>
 					<li class="item"><a href="#">工具下载</a></li>
+					<li class="item"><a href="#">类库下载</a></li>
 					<li class="item"><a href="#">资讯中心</a></li>
+					<li class="item"><a href="#">个人中心</a></li>
 				</ul>
 			</div>
 			<div class="header-search">
