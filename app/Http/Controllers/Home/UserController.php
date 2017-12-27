@@ -33,6 +33,15 @@ class UserController extends Controller{
         $this->user = $userService;
     }
 
+    /**
+     * index
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:用户列表demo
+     * @param Request $request
+     * @return string
+     * @throws \Exception
+     */
     public function index(Request $request){
         $params['page'] = !empty($request->page)?(int)htmlspecialchars(trim($request->page),ENT_QUOTES,"UTF-8"):1;
         $params['pageSize'] = !empty($request->pageSize)?(int)htmlspecialchars(trim($request->pageSize),ENT_QUOTES,"UTF-8"):self::pageSize;
