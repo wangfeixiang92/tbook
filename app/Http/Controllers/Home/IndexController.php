@@ -24,4 +24,10 @@ class IndexController extends Controller{
     public function index(){
         return view('home.index');
     }
+
+    //首页2
+
+    public function index2(){
+        return view('home.index2');
+    }
 }

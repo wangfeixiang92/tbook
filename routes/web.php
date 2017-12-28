@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['namespace' => 'Home'],function ($router)
 {
     $router->get('/','IndexController@index');
+    $router->get('/index2','IndexController@index2');
     // 用户
     require(__DIR__ . '/home/user.php');
 
