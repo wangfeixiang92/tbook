@@ -350,7 +350,7 @@
 			</div>
 			<div class="hot-promo">
 				<ul class="promo-list clearfix">
-					<li class="promo-item"><a href="#"><img src="holder.js/316x170?bg=FFAC30" alt=""></a></li>
+                    <li class="promo-item"><a href="#"><img src="holder.js/316x170?bg=FFAC30" alt=""></a></li>
 					<li class="promo-item"><a href="#"><img src="holder.js/316x170?bg=F95754" alt=""></a></li>
 					<li class="promo-item"><a href="#"><img src="holder.js/316x170?bg=4287E4" alt=""></a></li>
 				</ul>
@@ -361,7 +361,7 @@
 	<div class="single-goods">
 		<div class="container">
 			<div class="s-lg-title">
-				<span class="page-title">大米明星单品</span>
+				<span class="page-title">最热资源</span>
 				<div class="title-more">
 					<a href="javascript:" class="s-prev btn-default"><i class="iconfont">&#xe697;</i></a>
 					<a href="javascript:" class="s-next"><i class="iconfont">&#xe6a7;</i></a>
@@ -472,7 +472,7 @@
 			<!-- 家电 -->
 			<div class="home-ce clearfix">
 				<div class="title">
-					<span class="page-title">家电</span>
+					<span class="page-title">资源下载</span>
 					<div class="more">
 						<a href="javascript:" class="more-text active">热门</a>
 						<a href="javascript:" class="more-text">电视影音</a>
