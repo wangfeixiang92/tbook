@@ -26,8 +26,8 @@
     <div class="lg_dialog_mask remove" style="display: block;"></div>
     <div class="lg_wrap_login curr remove">
         <div class="lg_login">
-            <p class="lg_wrap_colse"><a href="javascript:void(0);" class="close"><img src="/images/web/lg_close.jpg" width="25"/></a></p>
-            <p class="lg_wrap_logo"><img src="/images/web/logo.png"></p>
+            <p class="lg_wrap_colse"><a href="javascript:void(0);" class="close"><img src="/images/lg_close.jpg" width="25"/></a></p>
+            <p class="lg_wrap_logo"><img src="/images/logo.png"></p>
             <p class="msg" style="color: red"></p>
             <p class="lg_wrap_text"><input type="text" name="mobile" placeholder="请输入手机号码"></p>
             <p class="lg_wrap_text"><input type="password" name="password" placeholder="请输入密码"></p>
