@@ -134,17 +134,17 @@ input:focus {
 			display: block;
 			width: 55px;
 			height: 55px;
-			background: url(../img/mi-logo.png) no-repeat center;
-			background-color: #ff6700;
+			/*background: url(../img/mi-logo.png) no-repeat center;*/
+			/*background-color: #ff6700;*/
 		}
 		.advertising a {
 			position: absolute;
 			top: 0;
 			left: 60px;
 			display: block;
-			height: 100px;
-			width: 160px;
-			background: url(../img/ad.gif) no-repeat center;
+			/*height: 100px;*/
+			/*width: 160px;*/
+			/*background: url(../img/ad.gif) no-repeat center;*/
 		}
 	.header-nav {
 		float: left;
@@ -1045,4 +1045,9 @@ input:focus {
 	height: 80px;
 	background: url(../img/slogan2016.png) no-repeat center 30px;
 	background-color: #f5f5f5;
+}
+.side-item{margin:22.5px 0}
+h1{
+	font-family: 宋体;
+	font-size: 30px;
 }

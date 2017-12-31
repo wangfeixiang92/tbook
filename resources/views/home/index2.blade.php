@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/css/home/main.css">
 	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <style>
-        .side-item{margin:22.5px 0}
+
     </style>
 </head>
 <body>
@@ -15,7 +15,7 @@
 	<div class="topbar">
 		<div class="container">
 			<div class="topbar-nav">
-					<a href="#">千册网</a>
+					<a href="#">Tbook</a>
 					<span class="ver">|</span>
 					<a href="#">关注我们</a>
 					<span class="ver">|</span>
@@ -40,12 +40,12 @@
 	<div class="header">
 		<div class="container">
 			<div class="header-logo">
-				<a href="index.html" class="logo"></a>
 				<div class="advertising">
-					<a href="#"></a>
+					<h1 href="index.html" class="logo">Tbook</h1>
+					{{--<a href="#">要做的不仅仅是程序员的工具库</a>--}}
 				</div>
 			</div>
-			<div class="header-nav">
+			<div class="header-nav" style="display: block">
 				<ul class="navlist clearfix">
 					<li class="all">
 						<div class="side-nav">
@@ -53,25 +53,34 @@
 								<li class="side-item"><a href="#">前端开发<i class="iconfont">&#xe6a7;</i></a>
 									<div class="children-nav">
 										<ul class="children-list">
-											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">大米6</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/xm5_80.png" class="icon-80"><span class="title">大米5X</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/max2_80.jpg" class="icon-80"><span class="title">大米Max2</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/5c_80.png" class="icon-80"><span class="title">大米手机5c</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/xmNOTE2_80.jpg" class="icon-80"><span class="title">大米 Note2</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/MIX_80.jpg" class="icon-80"><span class="title">大米MIX</span></a><a href="#" class="buybtn">选购</a></li>
+											<h4 class="menu-item-second"><a href="javascript:;" title="前端开发基础">菜鸟教程</a></h4>
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">精英教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">高手教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">大师教程</span></a></li>
 										</ul>
 										<ul class="children-list">
-											<li><a href="#" class="link"><img src="img/icon/xm5s_80.jpg"><span class="title">大米5s</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/xm5S-plus_80.jpg"><span class="title">大米5s Plus</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/hmn4x_80.png"><span class="title">红米Note 4X</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/hm4x_80.png"><span class="title">红米4X</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/hm4_80.jpg"><span class="title">红米4</span></a><a href="#" class="buybtn">选购</a></li>
-											<li><a href="#" class="link"><img src="img/icon/4G+80.jpg"><span class="title">移动4G+专区</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">精英教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">HTML教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xm5_80.png" class="icon-80"><span class="title">CSS教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/max2_80.jpg" class="icon-80"><span class="title">JavaScript教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/5c_80.png" class="icon-80"><span class="title">JQuery教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xmNOTE2_80.jpg" class="icon-80"><span class="title">Bootstrap教程</span></a></li>
 										</ul>
 										<ul class="children-list">
-											<li><a href="#" class="link"><img src="img/icon/compare.jpg" class="icon-80"><span class="title">对比手机</span></a></li>
-											<li><a href="#" class="link"><img src="img/icon/mifenka-1.jpg"><span class="title">米粉卡 日租卡</span></a></li>
-											<li><a href="#" class="link"><img src="img/icon/mimobile.jpg"><span class="title">大米移动 电话卡</span></a></li>
+
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">HTML教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xm5_80.png" class="icon-80"><span class="title">CSS教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/max2_80.jpg" class="icon-80"><span class="title">JavaScript教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/5c_80.png" class="icon-80"><span class="title">JQuery教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xmNOTE2_80.jpg" class="icon-80"><span class="title">Bootstrap教程</span></a></li>
+										</ul>
+										<ul class="children-list">
+
+											<li><a href="#" class="link"><img src="img/icon/holder_40.png" class="icon-80"><span class="title">HTML教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xm5_80.png" class="icon-80"><span class="title">CSS教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/max2_80.jpg" class="icon-80"><span class="title">JavaScript教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/5c_80.png" class="icon-80"><span class="title">JQuery教程</span></a></li>
+											<li><a href="#" class="link"><img src="img/icon/xmNOTE2_80.jpg" class="icon-80"><span class="title">Bootstrap教程</span></a></li>
 										</ul>
 									</div>
 								</li>
