@@ -1,39 +1,280 @@
-@extends('layouts.app')
-@section('title')千册资源网欢迎你！@endsection
-@section('keywords')资源手册,类库下载,php教程，js插件，go教程，千册资源@endsection
-@section('description')千册网是资源丰富的下载网站，我们致力于提供快速，高效的网络资源在线查看，下载服务@endsection
-@section('css')
-    <link rel="stylesheet" type="text/css" href="/css/home/global.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/home/index.css"/>
-    <style>
-        .popup-mtp{bottom:0;}
-        .set_width{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            width:120px;
-        }
-    </style>
-@endsection
-@section('js')
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tbook首页</title>
+    <link rel="stylesheet" href="Content/css/index.css" />
+    <link rel="stylesheet" href="Content/css/swiper.min.css" />
+</head>
+<body>
+<div class="header clearfix">
+    <div class="header-logo fl-left">
+        <a href="javascript:;">
+            <img src="Content/images/logo.jpg"/>
+        </a>
+    </div>
+    <div class="nav fl-left">
+        <ul class="clearfix">
+            <li class="active"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">网站模板</a></li>
+            <li><a href="javascript:;">js插件</a></li>
+        </ul>
+    </div>
+    <div class="search-box fl-left">
+        <input type="text"/>
+        <a class="search-btn" href="javascript:;">
+            <i class="iconfont icon-sousuo"></i>
+        </a>
+        <ul class="search-prompt">
+            <li><a href="#">jq插件</a></li>
+            <li><a href="#">jq插件</a></li>
+        </ul>
+    </div>
+    <div class="sign-box clearfix fl-right">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+    </div>
+</div>
 
-@endsection
+<div class="banner margin-top-40">
+    <div class="t-container swiper-container swiper-container-horizontal">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="javascript:;"><img src="Content/images/banner.jpg"/></a></li>
+            <li class="swiper-slide"><a href="javascript:;"><img src="Content/images/banner.jpg"/></a></li>
+            <li class="swiper-slide"><a href="javascript:;"><img src="Content/images/banner.jpg"/></a></li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 
-@section('content')
-    @include('layouts.headertop')
-
-
-    <div class="lg_dialog_mask remove" style="display: block;"></div>
-    <div class="lg_wrap_login curr remove">
-        <div class="lg_login">
-            <p class="lg_wrap_colse"><a href="javascript:void(0);" class="close"><img src="/images/lg_close.jpg" width="25"/></a></p>
-            <p class="lg_wrap_logo"><img src="/images/logo.png"></p>
-            <p class="msg" style="color: red"></p>
-            <p class="lg_wrap_text"><input type="text" name="mobile" placeholder="请输入手机号码"></p>
-            <p class="lg_wrap_text"><input type="password" name="password" placeholder="请输入密码"></p>
-            <p class="lg_wrap_lz"><a class="blue fl j_wj_btn" href="/forgetpwd.html?ReturnUrl='+window.location.href+'">忘记密码</a><a class="blue fr j_login_btn" href="/register.html?ReturnUrl='+window.location.href+'">注册账号</a></p>
-            <p class="lg_wrap_btn"><input type="button" class="but_login_submit" value="登&#12288;录"></p>
-            <p class="lg_wrap_dsf"><a class="lg_wrap_sina" href="/login/wxlogin?ReturnUrl='+window.location.href+'" target="_blank"></a><a class="lg_wrap_qq" href="/login/qqlogin?ReturnUrl='+window.location.href+'" target="_blank"></a></p>
+<div class="web-template margin-top-40">
+    <div class="t-container">
+        <div class="index-title">
+            <a href="javascript:;">网站模板</a>
+        </div>
+        <div class="content">
+            <ul class="clearfix">
+                <li>
+                    <div class="temp-image">
+                        <img src="Content/images/list-image.jpg"/>
+                    </div>
+                    <div class="temp-name">
+                        精美电商网站首页模板精美电商网站首页模板
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="temp-image">
+                        <img src="Content/images/list-image.jpg"/>
+                    </div>
+                    <div class="temp-name">
+                        精美电商网站首页模板精美电商网站首页模板
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="temp-image">
+                        <img src="Content/images/list-image.jpg"/>
+                    </div>
+                    <div class="temp-name">
+                        精美电商网站首页模板精美电商网站首页模板
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="temp-image">
+                        <img src="Content/images/list-image.jpg"/>
+                    </div>
+                    <div class="temp-name">
+                        精美电商网站首页模板精美电商网站首页模板
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-@endsection
+</div>
+
+<div class="js-plugg margin-top-40">
+    <div class="t-container">
+        <div class="index-title">
+            <a href="javascript:;">JS插件</a>
+        </div>
+        <div class="content clearfix">
+            <ul class="clearfix">
+                <li>
+                    <div class="plug-image">
+                        <img src="Content/images/list-image2.jpg"/>
+                    </div>
+                    <div class="plug-name">
+                        折线图插件
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plug-image">
+                        <img src="Content/images/list-image2.jpg"/>
+                    </div>
+                    <div class="plug-name">
+                        折线图插件
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plug-image">
+                        <img src="Content/images/list-image2.jpg"/>
+                    </div>
+                    <div class="plug-name">
+                        折线图插件
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plug-image">
+                        <img src="Content/images/list-image2.jpg"/>
+                    </div>
+                    <div class="plug-name">
+                        折线图插件
+                    </div>
+                    <div class="line-2 clearfix">
+                        <div class="visitor fl-left">
+                            <i class="iconfont icon-liulan"></i>14人浏览过
+                        </div>
+                        <div class="price fl-right">
+                            <i class="iconfont icon-bi-nose"></i>14
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="javascript:;">预览效果</a>
+                        <a href="javascript:;">立即下载</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer margin-top-20">
+    <div class="t-container clearfix">
+        <div class="web-map fl-left">
+            <h3>网站地图</h3>
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">网站模板</a></li>
+                <li><a href="javascript:;">js插件</a></li>
+            </ul>
+        </div>
+        <div class="friend-link fl-left">
+            <h3>友情链接</h3>
+            <ul class="clearfix">
+                <li><a href="javascript:;">百度</a></li>
+                <li><a href="javascript:;">千库网</a></li>
+                <li><a href="javascript:;">千图网</a></li>
+                <li><a href="javascript:;">花瓣网</a></li>
+                <li><a href="javascript:;">百度</a></li>
+                <li><a href="javascript:;">千库网</a></li>
+                <li><a href="javascript:;">千图网</a></li>
+                <li><a href="javascript:;">花瓣网</a></li>
+                <li><a href="javascript:;">百度</a></li>
+                <li><a href="javascript:;">千库网</a></li>
+                <li><a href="javascript:;">千图网</a></li>
+                <li><a href="javascript:;">花瓣网</a></li>
+                <li><a href="javascript:;">百度</a></li>
+                <li><a href="javascript:;">千库网</a></li>
+                <li><a href="javascript:;">千图网</a></li>
+                <li><a href="javascript:;">花瓣网</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="Content/js/swiper.min.js" ></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        autoplay : 5000,
+        loop : true,
+    });
+</script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
