@@ -29,6 +29,7 @@ class CreateBookContentsTable extends Migration
             $table->integer('browse_num')->default(1)->comment('浏览数');
             $table->integer('collect_num')->default(1)->comment('收藏数');
             $table->integer('favorite_num')->default(1)->comment('喜爱数');
+            $table->integer('download_num')->default(1)->comment('下载数');
             $table->dateTime('publish_time')->comment('发布时间');
             $table->index('title');
         });
