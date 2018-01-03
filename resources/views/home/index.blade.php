@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Tbook首页</title>
-    <link rel="stylesheet" href="Content/css/index.css" />
-    <link rel="stylesheet" href="Content/css/swiper.min.css" />
+    <link rel="stylesheet" href="/Content/css/index.css" />
+    <link rel="stylesheet" href="/Content/css/swiper.min.css" />
+    <script type="text/javascript" src="/Content/js/jquery.js" ></script>
 </head>
 <body>
 <div class="header clearfix">
@@ -31,7 +32,7 @@
         </ul>
     </div>
     <div class="sign-box clearfix fl-right">
-        <a href="javascript:;">登录</a>
+        <a class="sign-btn" href="javascript:;">登录</a>
         <a href="javascript:;">注册</a>
     </div>
 </div>
@@ -265,7 +266,74 @@
     </div>
 </div>
 
-<script type="text/javascript" src="Content/js/swiper.min.js" ></script>
+<div class="mask">
+    <div class="sign-box">
+        <a class="close-btn" href="javascript:;" id="closeBtn">
+            <i class="index-icon icon-close"></i>
+        </a>
+        <div class="tab-title">
+            <ul class="clearfix">
+                <li class="active"><a href="#sign">登录</a></li>
+                <li><a href="#register">注册</a></li>
+            </ul>
+        </div>
+        <div class="tab-body">
+            <div class="tab-content active" id="sign">
+                <form>
+                    <label>
+                        <input type="text" placeholder="请输入您的用户名"/>
+                    </label>
+                    <label>
+                        <input type="password" placeholder="请输入您的密码"/>
+                    </label>
+                    <div class="sign-rem clearfix">
+                        <label class="fl-left">
+                            <a class="sign-btn" href="javascript:;">登录</a>
+                        </label>
+                        <label class="fl-left rem-password">
+                            <input type="checkbox"/><i></i>记住密码
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-content " id="register">
+                <form>
+                    <label>
+                        <input type="text" placeholder="请填写您的手机号码"/>
+                    </label>
+                    <label class="check-code">
+                        <input type="text" placeholder="验证码"/>
+                        <a href="javascript:;">发送验证码</a>
+                    </label>
+                    <label>
+                        <a class="sign-btn" href="javascript:;">注册</a>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="quick-sign">
+            <div class="quick-sign-title">
+                <span>快捷方式登录</span>
+            </div>
+            <div class="quick-sign-list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="javascript:;">
+                            <i class="index-icon icon-qq"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="index-icon icon-wechat"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/Content/js/swiper.min.js" ></script>
 <script type="text/javascript">
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -274,7 +342,21 @@
     });
 </script>
 <script type="text/javascript">
-
+    $(document).ready(function(){
+        $(".tab-title li").click(function(e){
+            e.preventDefault();
+            var $this = $(this);
+            var target = $this.find("a").attr("href");
+            $this.addClass("active").siblings().removeClass("active");
+            $(target).addClass("active").siblings().removeClass("active");
+        });
+        $(".header .sign-box a").click(function(){
+            $(".mask").fadeIn();
+        });
+        $("#closeBtn").click(function(){
+            $(".mask").fadeOut();
+        })
+    });
 </script>
 </body>
 </html>
