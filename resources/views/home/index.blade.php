@@ -281,14 +281,14 @@
             <div class="tab-content active" id="sign">
                 <form>
                     <label>
-                        <input type="text" placeholder="请输入您的用户名"/>
+                        <input type="text" name="username" placeholder="请输入您的用户名"/>
                     </label>
                     <label>
-                        <input type="password" placeholder="请输入您的密码"/>
+                        <input type="password" name="password" placeholder="请输入您的密码"/>
                     </label>
                     <div class="sign-rem clearfix">
                         <label class="fl-left">
-                            <a class="sign-btn" href="javascript:;">登录</a>
+                            <a class="sign-btn login_submit" href="javascript:;">登录</a>
                         </label>
                         <label class="fl-left rem-password">
                             <input type="checkbox"/><i></i>记住密码
@@ -355,6 +355,28 @@
         });
         $("#closeBtn").click(function(){
             $(".mask").fadeOut();
+        })
+        $('.login_submit').click(function(){
+            var username = $("input[name='username']").val();
+            var password = $("input[name='password']").val();
+            if(!username){
+                alert('请输入用户名！');
+                return false;
+            }
+            if(!password){
+                alert('请输入密码！');
+                return false;
+            }
+
+            $.post('/login',{'_token': '{{csrf_token()}}','username':username,'password':password},function(result){
+                if(result.status==0){
+                    alert(result.msg);
+                    return false;
+                }else{
+                    alert('登录成功!');
+                    window.location.reload();
+                }
+            },'json')
         })
     });
 </script>
