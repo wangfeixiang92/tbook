@@ -47,6 +47,14 @@ class UserService extends BaseService
        return $this->user->getUserByItem($where);
     }
 
+    /**
+     * addUser
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:添加用户-注册
+     * @param $data
+     * @return mixed
+     */
     public function addUser($data){
         $user =  $this->user->create($data);
         return $user->id;
