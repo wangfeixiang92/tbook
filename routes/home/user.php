@@ -6,4 +6,12 @@
  * Time: 14:56
  */
 
-$router->resource('user','UserController');
+
+/**
+ * 判断登录设置
+ */
+$router->group(['middleware' => ['checkLogin']],function ($router)
+{
+    $router->resource('user','UserController');
+
+});
