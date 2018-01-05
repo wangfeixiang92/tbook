@@ -72,3 +72,48 @@ if (!function_exists('getRandomString')) {
         return $ret;
     }
 }
+if (!function_exists('isEmail')) {
+    /**
+     * isEmail
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param $email
+     * @return int
+     */
+    function isEmail($email)
+    {
+        return preg_match('/^[a-z0-9.\-_]{2,64}@[a-z0-9]{1,32}(\.[a-z0-9]{2,5})+$/i', $email);
+    }
+}
+if (!function_exists('isMobile')) {
+    /**
+     * isMobile
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param $mobile
+     * @return int
+     */
+    function isMobile($mobile)
+    {
+        return preg_match("/^1[34578][0-9]{9}$/", $mobile);
+    }
+}
+if (!function_exists('isPhone')) {
+    /**
+     * isPhone
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param $string
+     * @return bool
+     */
+    function isPhone($string)
+    {
+        if (preg_match('/^0\d{2,3}-\d{7,8}$/', $string) || preg_match('/^0\d{2,3}-\d{7,8}-\d{1,6}$/', $string)) {
+            return true;
+        }
+        return false;
+    }
+}

@@ -20,7 +20,9 @@ Route::group(['namespace' => 'Home'],function ($router)
     $router->get('/','IndexController@index');
     $router->get('/index2','IndexController@index2');
     $router->get('/index4','IndexController@index4');
-    $router->post('/login','IndexController@login');
+
+    $router->post('/login','LoginController@login');
+    $router->post('/register','RegisterController@register');
     // 用户
     require(__DIR__ . '/home/user.php');
 

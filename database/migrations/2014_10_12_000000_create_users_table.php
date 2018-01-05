@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->integer('user_level')->default(1)->nullable()->comment("用户等级");
             $table->string('username',64)->nullable()->unique()->comment("用户名");
             $table->string('email',64)->unique()->comment("邮件");
+            $table->string('qq',64)->unique()->comment("qq");
+            $table->string('weixin',64)->unique()->comment("微信");
             $table->string('mobile',32)->nullable()->unique()->comment("手机");
             $table->string('sex',4)->nullable()->comment("性别");
             $table->string('password',64)->comment("密码");

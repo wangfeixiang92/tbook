@@ -35,6 +35,23 @@ class UserService extends BaseService
         return $list = $this->user->getUserList($params['page'],$params['pageSize']);
     }
 
+    /**
+     * getUserByWhere
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:根据条件查询用户信息
+     * @param $where
+     * @return \Illuminate\Database\Eloquent\Model|null|static
+     */
+    public function getUserByWhere($where){
+       return $this->user->getUserByItem($where);
+    }
+
+    public function addUser($data){
+        $user =  $this->user->create($data);
+        return $user->id;
+    }
+
 
 
 }
