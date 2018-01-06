@@ -50,7 +50,7 @@ class IndexController extends Controller{
         $category = $this->category->getCategoryList(array(
             'is_show'=>'Y',
         ),1,8,'id');
-        dd($category);
+
         $book = array();
         //获取内容，todo 此方法需待改进
         foreach ($category as $key=>$item){

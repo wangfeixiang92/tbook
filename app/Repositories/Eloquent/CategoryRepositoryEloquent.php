@@ -38,6 +38,7 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
             }
         }
         $book->orderBy($order_by,'desc')->forPage($page,$size);
+
         return $book->get()->toArray();
     }
 
