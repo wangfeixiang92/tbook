@@ -49,14 +49,15 @@ class IndexController extends Controller{
         //获取分类
         $category = $this->category->getCategoryList(array(
             'is_show'=>'Y',
-        ),1,8);
+        ),1,8,'id');
+        dd($category);
         $book = array();
         //获取内容，todo 此方法需待改进
         foreach ($category as $key=>$item){
             $book[$key] = $this->book->getBookList(array(
                 'is_show'=>'Y',
                 'category_id'=>$item['id'],
-            ),1,8);
+            ),1,8,'id');
         }
 
         return view('home.index')->with(compact('category','book'));
