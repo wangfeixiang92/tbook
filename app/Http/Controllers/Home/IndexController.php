@@ -57,7 +57,7 @@ class IndexController extends Controller{
             $book[$key] = $this->book->getBookList(array(
                 'is_show'=>'Y',
                 'category_id'=>$item['id'],
-            ),1,8,'id');
+            ),1,8,'browse_num');
         }
 
         return view('home.index')->with(compact('category','book'));
