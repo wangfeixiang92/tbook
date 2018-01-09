@@ -38,6 +38,30 @@ class CategoryService extends BaseService
 	    return $this->category->getCategoryList($where,$page,$size,$oederby);
     }
 
+    /**
+     * getCategoryInfo
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param $where
+     * @return array|null
+     */
+    public function getCategoryInfo($where){
+        return $this->category->getCategoryBywhere($where);
+    }
+
+    /**
+     * getChildCategory
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:获取子分类
+     * @param $cate_id
+     * @return array|null
+     */
+    public function getChildCategory($cate_id){
+        return $this->category->getChildrenCategory($cate_id);
+    }
+
 
 
 }

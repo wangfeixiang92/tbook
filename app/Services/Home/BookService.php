@@ -38,6 +38,19 @@ class BookService extends BaseService
         return $this->book->getBookList($where,$page,$size,$orderby);
     }
 
+    /**
+     * getBookCOunt
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:获取总数
+     * @param $where
+     * @return int|null
+     */
+    public function getBookCount($where){
+        return $this->book->getBookCount($where);
+    }
+
+
 
 
 }

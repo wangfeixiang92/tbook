@@ -32,9 +32,9 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
         foreach ($where as $key=>$item){
             if (is_array($item)) {
                 list($key, $condition, $val) = $item;
-                $book = $this->model->where($key, $condition, $val);
+                $book = $book->where($key, $condition, $val);
             } else {
-                $book = $this->model->where($key, '=', $item);
+                $book = $book->where($key, '=', $item);
             }
         }
         $book->orderBy($order_by,'desc')->forPage($page,$size);
@@ -42,5 +42,55 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
         return $book->get()->toArray();
     }
 
+    /**
+     * getCategoryBywhere
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param array $where
+     * @return array|null
+     */
+    public function getCategoryBywhere(array $where){
+        $book = $this->model;
+        if(empty($where)){
+            return null;
+        }
+        if(!is_array($where)){
+            return null;
+        }
+
+        foreach ($where as $key=>$item){
+            if (is_array($item)) {
+                list($key, $condition, $val) = $item;
+                $book = $book->where($key, $condition, $val);
+            } else {
+                $book = $book->where($key, '=', $item);
+            }
+        }
+
+        $data =  $book->first();
+        if(!empty($data)){
+            return $data->toArray();
+        }
+        return [];
+
+    }
+
+    /**
+     * getChildrenCategory
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:获取子分类
+     * @param $parent_id
+     * @return array|null
+     */
+    public function getChildrenCategory($parent_id){
+        $book = $this->model;
+        if(empty($parent_id)){
+            return null;
+        }
+        $book = $book->where('parenr_id', '=', $parent_id);
+        return $book->get()->toArray();
+    }
     
 }

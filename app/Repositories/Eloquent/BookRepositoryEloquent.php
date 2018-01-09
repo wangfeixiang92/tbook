@@ -22,6 +22,34 @@ class BookRepositoryEloquent extends BaseRepository implements BookRepository
     }
 
     /**
+     * getBookCount
+     * @Author: Yume
+     * @Date:   ${DATE} ${TIME}
+     * @Description:
+     * @param array $where
+     * @return int|null
+     */
+    public function getBookCount(array $where){
+        $book = $this->model;
+        if(empty($where)){
+            return null;
+        }
+        if(!is_array($where)){
+            return null;
+        }
+        $book->where('is_show','Y');
+        foreach ($where as $key=>$item){
+            if (is_array($item)) {
+                list($key, $condition, $val) = $item;
+                $book = $book->where($key, $condition, $val);
+            } else {
+                $book = $book->where($key, '=', $item);
+            }
+        }
+        return $book->count();
+    }
+
+    /**
      * getBookList
      * @Author: Yume
      * @Date:   ${DATE} ${TIME}
@@ -39,17 +67,19 @@ class BookRepositoryEloquent extends BaseRepository implements BookRepository
         if(!is_array($where)){
             return null;
         }
-
+        $book->where('is_show','Y');
         foreach ($where as $key=>$item){
             if (is_array($item)) {
                 list($key, $condition, $val) = $item;
-                $book = $this->model->where($key, $condition, $val);
+                $book = $book->where($key, $condition, $val);
             } else {
-                $book = $this->model->where($key, '=', $item);
+                $book = $book->where($key, '=', $item);
             }
         }
         $book->orderBy($order_by,'desc')->forPage($page,$size);
         return $book->get()->toArray();
     }
+
+
     
 }

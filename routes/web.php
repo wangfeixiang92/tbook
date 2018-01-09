@@ -24,6 +24,7 @@ Route::group(['namespace' => 'Home'],function ($router)
     $router->post('/login','LoginController@login');
     $router->post('/register','RegisterController@register');
     // 用户
+    require(__DIR__ . '/home/book.php');
     require(__DIR__ . '/home/user.php');
 
 });
