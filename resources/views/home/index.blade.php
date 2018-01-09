@@ -265,7 +265,6 @@
         </div>
     </div>
 </div>
-
 <div class="mask">
     <div class="sign-box">
         <a class="close-btn" href="javascript:;" id="closeBtn">
@@ -299,11 +298,11 @@
             <div class="tab-content " id="register">
                 <form>
                     <label>
-                        <input type="text" placeholder="请填写您的手机号码"/>
+                        <input type="text" class="mobile"  name='mobile' placeholder="请填写您的手机号码"/>
                     </label>
                     <label class="check-code">
                         <input type="text" placeholder="验证码"/>
-                        <a href="javascript:;">发送验证码</a>
+                        <a class="yzm" sec='60' href="javascript:;">发送验证码</a>
                     </label>
                     <label>
                         <a class="sign-btn" href="javascript:;">注册</a>
@@ -378,6 +377,26 @@
                 }
             },'json')
         })
+
+        $('.yzm').click(function(){
+            var mobile = $.trim($('.mobile').val());
+            var reg = /^\d{11}$/;
+            if(!reg.test(mobile)){
+                alert('手机号码格式不正确');
+                return false;
+            }
+            $('.yzm').text($('.yzm').attr('sec')+'秒后重新发送').attr('disabled', true);
+            var t = setInterval(function(){
+                var sec = parseInt($('.yzm').attr('sec'))-1;
+                if(sec<=0){
+                    $('.yzm').attr('disabled', false).attr('sec', 60).text('获得验证码');
+                    clearInterval(t);
+                }else{
+                    $('.yzm').attr('sec', sec).text(sec+'秒后重新发送');
+                }
+            }, 1000);
+        })
+
     });
 </script>
 </body>
