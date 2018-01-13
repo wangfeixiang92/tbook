@@ -714,3 +714,44 @@ html,body{
     color: @dark-4 !important;
     margin: 0 5px;
 }
+
+/*列表筛选条件*/
+.screen-box{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    background: @white;
+    line-height: 30px;
+    padding: 10px 0;
+    margin-top: 10px;
+    .effect-list{
+        box-sizing: border-box;
+        padding-left: 100px;
+    }
+    .screen-name{
+        position: absolute;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        font-size: 14px;
+        color: #3e3e3e;
+        font-weight: 700;
+    }
+    ul{
+        margin-bottom: 0 !important;
+    }
+    li{
+        float: left;
+        box-sizing: border-box;
+        padding: 0 20px;
+        a{
+            transition: all 0.2s;
+            color: #3e3e3e;
+            &:hover{
+                font-weight: 700;
+                color: @main-color;
+            }
+        }
+    }
+}
