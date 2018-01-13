@@ -31,35 +31,43 @@
                 <div class="form-group has-success has-feedback">
                     <div class="col-sm-12">
                         <div class="input-group">
-                            <span class="input-group-addon">店铺商品名</span>
-                            <input type="text" class="form-control" name="shop_name" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <span class="input-group-addon">零售价</span>
+                            <input type="text" class="form-control" name="taxprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                         </div>
                     </div>
                 </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">品牌名</span>
-                            <input type="text" class="form-control" name="brand_name" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">规格</span>
-                            <input type="text" class="form-control" name="style" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">库存</span>
-                            <input type="text" class="form-control" name="store_num" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">店铺商品名</span>--}}
+                            {{--<input type="text" class="form-control" name="shop_name" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">品牌名</span>--}}
+                            {{--<input type="text" class="form-control" name="brand_name" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">规格</span>--}}
+                            {{--<input type="text" class="form-control" name="style" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">库存</span>--}}
+                            {{--<input type="text" class="form-control" name="store_num" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <div class="form-group has-success has-feedback">
                     <div class="col-sm-12">
                         <div class="input-group">
@@ -68,22 +76,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">税率</span>
-                            <input type="text" class="form-control" name="taxrate" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">店铺URL</span>
-                            <input type="text" class="form-control" name="my_url" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">税率</span>--}}
+                            {{--<input type="text" class="form-control" name="taxrate" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">店铺URL</span>--}}
+                            {{--<input type="text" class="form-control" name="my_url" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <div class="form-group has-success has-feedback">
                     <div class="col-sm-12">
                         <div class="input-group">
@@ -92,53 +100,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">零售价</span>
-                            <input type="text" class="form-control" name="taxprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">含税零售价</span>
-                            <input type="text" class="form-control" name="retailprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">供货价</span>
-                            <input type="text" class="form-control" name="supplyprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">含税供货价</span>
-                            <input type="text" class="form-control" name="taxsupplyprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">实际到手价</span>
-                            <input type="text" class="form-control" name="realprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>  <div class="form-group has-success has-feedback">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <span class="input-group-addon">实际出售价</span>
-                            <input type="text" class="form-control" name="realsellingprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">含税零售价</span>--}}
+                            {{--<input type="text" class="form-control" name="retailprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">供货价</span>--}}
+                            {{--<input type="text" class="form-control" name="supplyprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">含税供货价</span>--}}
+                            {{--<input type="text" class="form-control" name="taxsupplyprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">实际到手价</span>--}}
+                            {{--<input type="text" class="form-control" name="realprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>  <div class="form-group has-success has-feedback">--}}
+                    {{--<div class="col-sm-12">--}}
+                        {{--<div class="input-group">--}}
+                            {{--<span class="input-group-addon">实际出售价</span>--}}
+                            {{--<input type="text" class="form-control" name="realsellingprice" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <div class="form-group has-success has-feedback">
                     <div class="col-sm-12">
                         <div class="input-group">

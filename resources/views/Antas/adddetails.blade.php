@@ -36,6 +36,14 @@
                             <input type="file" class="form-control" name="img2" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                             <input type="file" class="form-control" name="img3" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                             <input type="file" class="form-control" name="img4" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img5" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img6" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img7" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img8" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img9" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img10" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img11" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                            <input type="file" class="form-control" name="img12" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
                         </div>
                     </div>
                 </div>

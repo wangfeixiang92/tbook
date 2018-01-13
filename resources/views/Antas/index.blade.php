@@ -22,7 +22,7 @@
           <div class="col-md-1 "></div>
           <div class="col-md-10 ">
               <h3 class="center-block">安娜斯塔尼亚商品管理</h3>
-              <table class="table table-condensed table-hover table-bordered ">
+              <table class="table table-condensed table-hover table-bordered " id="galley">
                   <head>
                       <th >ID</th>
                       <th >班列购名称</th>
@@ -36,17 +36,17 @@
                       <th >推荐指数</th>
                       <th >详情</th>
                       <th >补充供货价</th>
-                      <th>问题</th>
+                      {{--<th>问题</th>--}}
                   </head>
                   <tbody>
                  @foreach($list as $key=>$val)
                   <tr>
                       <td >{{$val['id']}}</td>
                       <td >{{$val['good_name']}}</td>
-                      <td id="galley"><img style="width:50px;" data-original="{{$val['showimg']}}" src="{{$val['showimg']}}" alt="点击查看"></td>
+                      <td ><img style="width:50px;" data-original="{{$val['showimg']}}" src="{{$val['showimg']}}" alt="点击查看"></td>
                       <td ><button class="btn btn-default btn-xs"  style="font-size: 5px" data-toggle="modal" onclick="lookUrl('{{$val['source_url']}}')" data-target="#myModal"  >点击查看</button></td>
                       <td >{{$val['retailprice']}}</td>
-                      @if(empty($val['taxsupplyprice']))
+                      @if(empty($val['taxsupplyprice']) || $val['taxsupplyprice'] == '0.00')
                           <td>待补充</td>
                       @else
                           <td >{{$val['taxsupplyprice']}}</td>
@@ -56,20 +56,20 @@
                       <td >{{$val['profit']}}</td>
                       <td >{{$val['power']}}星</td>
                       <td ><button class="btn btn-default btn-xs"  style="font-size: 5px" data-toggle="modal" data-target="#myModal2" onclick="lookDeatil({{$val['id']}})" >查看详情</button></td>
-                          @if(empty($val['taxsupplyprice']))
+                          @if(empty($val['taxsupplyprice']) || $val['taxsupplyprice'] == '0.00')
                           <td ><button onclick="supplePrice({{$val['id']}})"  class="btn btn-danger btn-xs"  style="font-size: 5px" data-toggle="modal" data-target="#myModal3" >补充供货价</button></td>
                           @else
                           <td ><button onclick="supplePrice({{$val['id']}})" class="btn btn-success btn-xs"  style="font-size: 5px" data-toggle="modal" data-target="#myModal3" >补充供货价</button></td>
                           @endif
-                      <td ><button class="btn btn-danger btn-xs"  style="font-size: 5px" data-toggle="modal" data-target="#myModal4" >回答问题</button></td>
+                      {{--<td ><button class="btn btn-danger btn-xs"  style="font-size: 5px" data-toggle="modal" data-target="#myModal4" >回答问题</button></td>--}}
                   </tr>
                      @endforeach
                   </tbody>
               </table>
           </div>
-          <div class="col-md-1 "><button class="btn btn-danger btn-xs" type="button" style="font-size: 5px">
-                  待回答的问题 <span class="badge">4</span>条
-              </button></div>
+          {{--<div class="col-md-1 "><button class="btn btn-danger btn-xs" type="button" style="font-size: 5px">--}}
+                  {{--待回答的问题 <span class="badge">4</span>条--}}
+              {{--</button></div>--}}
       </div>
   </div>
 

@@ -54,7 +54,7 @@ class AntasController extends Controller{
         {
             $id=$val['id'];
             $shows = DB::table('antas_showimgs')->where('gid',$id)->where('status',$status)->select('img')->orderby('sort','desc')->first();
-            $list[$key]['showimg'] =empty(get_object_vars($shows))?'':get_object_vars($shows)['img'];
+            $list[$key]['showimg'] =empty(($shows))?'':get_object_vars($shows)['img'];
         }
 
         return view('antas.index')->with(compact('list'));
@@ -138,12 +138,12 @@ class AntasController extends Controller{
         unset($map['_token']);
         $map['createtime'] = date('Y-m-d H:i:s',time());
         $map['retailprice'] = round($map['taxprice']+$map['taxation'],2);
-        $map['profit'] = round($map['realprice']-$map['realsellingprice'],2);
+        //$map['profit'] = round($map['realprice']-$map['realsellingprice'],2);
         $res = DB::table('antas_goods')->insert($map);
         if($res){
-            echo '成功';exit;
+            return redirect('/antas/index');
         }
-        echo '失败';
+        return redirect('/antas/index');
     }
 
     //更新供货价
